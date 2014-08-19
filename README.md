@@ -1,9 +1,9 @@
 Schism
 ======
 
-Schism is an attempt to bring modularity to CSS, using SCSS, BEM inspired naming schemes and a set of rules for creating components. It uses heavily SCSS mixins and encourages you to avoid many of CSS main features: "smart" selectors, the cascade, specificity (if you can call specificity a feature).
+Schism is an attempt to bring modularity to CSS - using SCSS, naming schemes and a set of rules for creating components. It encourages you to avoid many of CSS main features: "smart" selectors, the cascade and specificity (if you can call specificity a feature).
 
-It is as much a framework as methodology and aimed at larger projects, where maintainability is a prime concern. Separation is encouraged over DRY, composition over inheritance.
+It is a framework/methodology and aimed at larger projects, where maintainability is a prime concern. Separation is encouraged over DRY, composition over inheritance.
 
 As such, it might be a bit verbose for smaller projects.
 
@@ -16,7 +16,7 @@ As such, it might be a bit verbose for smaller projects.
 
 ## Structure
 
-A Schism project divides your CSS into Components, Helpers and Base. CSS and SCSS have both different abstractions for things that won't fit into these - like keyframes for animations or mixins in SCSS. These should live in their own folders.
+A Schism project divides your CSS into Components, Helpers and Base. CSS and SCSS have both different abstractions for things that won't fit into these - like keyframes for animations or mixins in SCSS. These should live in their own folders and should not affect framework components in a unpredictable ways, but be available for usage (ie. don't put classes, elements selectors and similar outside of Components, Helpers and Base).
 
 An example project structure:
 ```

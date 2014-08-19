@@ -8,6 +8,9 @@ It is as much a framework as methodology and aimed at larger projects, where mai
 As such, it might be a bit verbose for smaller projects.
 
 1. [Structure](https://github.com/dpiatek/schism#structure)
+  1. [Components concepts](https://github.com/dpiatek/schism#components-concepts)
+    1. [Grouped components](https://github.com/dpiatek/schism#grouped-components)
+    2. [Containers](https://github.com/dpiatek/schism#containers)
 2. [Components](https://github.com/dpiatek/schism#components)
 3. [Rules](https://github.com/dpiatek/schism#rules)
 
@@ -46,7 +49,7 @@ vendor
 style.scss
 ```
 
-### Components
+### Components concepts
 Schism provides mixins to create components. But without the right approach, components will be nothing more then your usual CSS soup.
 
 Components should:

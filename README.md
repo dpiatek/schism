@@ -7,9 +7,9 @@ It is as much a framework as methodology and aimed at larger projects, where mai
 
 As such, it might be a bit verbose for smaller projects.
 
-1. [Structure](https://github.com/dpiatek/schism/edit/master/README.md#structure)
-2. [Components](https://github.com/dpiatek/schism/edit/master/README.md#components)
-3. [Rules](https://github.com/dpiatek/schism/edit/master/README.md#rules)
+1. [Structure](https://github.com/dpiatek/schism#structure)
+2. [Components](https://github.com/dpiatek/schism#components)
+3. [Rules](https://github.com/dpiatek/schism#rules)
 
 ## Structure
 ## Components

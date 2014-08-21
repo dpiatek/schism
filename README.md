@@ -1,3 +1,5 @@
+**Notice: this project is not yet release ready and under lots of flux**
+
 Schism
 ======
 

@@ -1,0 +1,41 @@
+$__component-name: null !default;
+$__element-name: null !default;
+$__components: '';
+
+@function __add-component ($name, $__components) {
+  @if $__component-name {
+    $__component-name: "" !global;
+  }
+
+  @if index($__components, $name) {
+    @warn "This component already exists";
+    @return $__components;
+  } @else {
+    $__component-name: $name !global;
+    @return append($__components, $name, comma);
+  }
+}
+
+@mixin Component($name) {
+  $__components: __add-component($name, $__components) !global;
+
+  .#{$name},
+  %#{$name} {
+    @content;
+  }
+}
+
+@mixin Fragment($name) {
+  $__element-name: $__component-name + "__" + $name !global;
+
+  .#{$__component-name}__#{$name},
+  %#{$__component-name}__#{$name} {
+    @content;
+  }
+
+  $__element-name: null !global;
+}
+
+@mixin Modifier($name) {
+  @at-root .#{$__element-name or $__component-name}.-#{$name} { @content; }
+}

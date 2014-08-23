@@ -17,12 +17,27 @@ Schism might not be a good idea if:
 - you don't like this already but still want component based CSS: checkout [Suit CSS](https://github.com/suitcss/suit) and [Inuit CSS](https://github.com/inuitcss) and everything by their authors, you just might find something you like
 
 1. [Core concepts]()
+-  [Schism helpers]()
 -  [Structure](https://github.com/dpiatek/schism#structure)
 -  [Components](https://github.com/dpiatek/schism#components)
 
 ## Core concepts
 
-At the heart of Schism is the idea that almost anything on your page can be extracted into a component that knows nothing about any other component: it does not expect a container
+At the heart of Schism is the idea that almost anything on your page can be extracted into a component that knows nothing about any other component. 
+
+A component should never be broken when it is not contained inside a specific container (a parent with a specific class, id). It might not look right all the time - but it should always look right when the parent element creates the right constrains (for example width).
+
+```scss
+// Bad 
+.ad {}
+.sidebar .ad {}
+
+// Better
+.ad {}
+.ad.-sidebar {}
+```
+
+What this gives us is a single level selector; and if you debugged any large CSS codebase you know the value of being able to write these "flat" classes and getting a predictable result in the browser is priceless.
 
 ## Structure
 

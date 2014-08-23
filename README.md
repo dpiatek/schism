@@ -3,14 +3,26 @@
 Schism
 ======
 
-Schism is an attempt to bring modularity to CSS. It uses SCSS, naming schemes and a set of rules for creating components. It encourages you to avoid many of CSS main features: "smart" selectors, the cascade and specificity.
+Schism is an attempt to bring modularity to CSS by using as little of CSS as possible. In a way, it's CSS the Good Parts, but probably less exciting in the longer run.
 
-It is aimed at larger projects, where maintainability is a prime concern. Separation is encouraged over DRY; clarity over tersness.
+It is aimed at larger projects, where maintainability is a prime concern. Separation is encouraged over DRY. As any methodology, it requires discipline; diverging will just bring you back to your starting point: the CSS spaghetti.
 
-As such, it might be a bit verbose for smaller projects.
+It uses SCSS, BEM inspired naming schemes and a mix of less or more fashionable techniques that you probably saw somewhere.
 
-1. [Structure](https://github.com/dpiatek/schism#structure)
-2. [Components](https://github.com/dpiatek/schism#components)
+Schism might not be a good idea if:
+- your project is really small: CSS tends to work well for small things, if you know what you are doing
+- you don't have control over your CSS: Schism outputs classes; it will make it hard for you to solve specificity problems if you use `id` all over
+- you don't like SCSS: you can still steal the ideas, not much code here
+- you can't be bothered to follow the rules: you have bigger problems then CSS
+- you don't like this already but still want component based CSS: checkout [Suit CSS](https://github.com/suitcss/suit) and [Inuit CSS](https://github.com/inuitcss) and everything by their authors, you just might find something you like
+
+1. [Core concepts]()
+-  [Structure](https://github.com/dpiatek/schism#structure)
+-  [Components](https://github.com/dpiatek/schism#components)
+
+## Core concepts
+
+At the heart of Schism is the idea that almost anything on your page can be extracted into a component that knows nothing about any other component: it does not expect a container
 
 ## Structure
 

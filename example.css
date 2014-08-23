@@ -1,0 +1,13 @@
+.tabs {
+  background-color: red;
+}
+.tabs.-dark-theme {
+  background-color: black;
+}
+
+.tabs__nav {
+  display: inline-block;
+}
+.tabs__nav.-stacked {
+  background-color: black;
+}

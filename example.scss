@@ -1,0 +1,17 @@
+@import "schism";
+
+@include Component(tabs) {
+  background-color: red;
+
+  @include Modifier(dark-theme) {
+    background-color: black;
+  }
+}
+
+@include Fragment(nav) {
+  display: inline-block;
+
+  @include Modifier(stacked) {
+    background-color: black;
+  }
+}

@@ -1,5 +1,5 @@
-Schism
-======
+Schism v0.0.1
+=============
 
 Schism is an attempt to bring modularity to CSS. At the core, it is just a few SCSS mixins and a methodology for building a library of reusable components.
 
